@@ -1,0 +1,31 @@
+Codice 1 (Server):
+
+Si tratta di un server socket che ascolta le connessioni in arrivo da parte dei client.
+È responsabile di eseguire determinate azioni in base ai comandi inviati dai client.
+Utilizza la libreria socket, platform, e os per comunicare con i client e ottenere informazioni sul sistema e sui file.
+
+Codice 2 (Client):
+
+Si tratta di un client socket che si connette a un server remoto e interagisce con esso.
+L'utente può selezionare opzioni da un menu per inviare comandi al server, come ottenere informazioni di sistema o elencare il contenuto di una directory remota.
+Utilizza la libreria socket per creare una connessione TCP/IP con il server.
+
+Principali differenze:
+
+Ruolo: Il primo codice è un server che attende e gestisce le connessioni in arrivo dai client. 
+Il secondo codice è un client che si connette a un server e invia comandi.
+
+Flusso di controllo: Nel primo codice, il flusso di controllo è principalmente guidato dalle richieste in arrivo dai client. 
+Nel secondo codice, il flusso di controllo è guidato dalle scelte dell'utente attraverso un menu.
+
+Comunicazione: Il primo codice comunica con i client per eseguire azioni specifiche in base ai comandi inviati. 
+Il secondo codice comunica con un server remoto per inviare comandi e ricevere dati in risposta.
+
+Librerie utilizzate: Entrambi i codici utilizzano il modulo socket, ma il primo codice utilizza anche i moduli platform e os 
+per ottenere informazioni sul sistema e gestire i file.
+
+Scopo: Il primo codice sembra essere un esempio di un server che fornisce servizi di base come ottenere informazioni sul sistema e 
+elencare file in una directory. Il secondo codice sembra essere un client che si connette a un server per richiedere tali servizi.
+
+Il primo codice è un server che fornisce servizi mentre il secondo codice è un client che interagisce con il server per ottenere servizi specifici. 
+Entrambi i codici sono utili componenti di un'applicazione client-server, ma svolgono ruoli diversi nella comunicazione.

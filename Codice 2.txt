@@ -1,0 +1,13 @@
+COSA E' E COSA FA IL CODICE 2:
+
+Il codice fornito rappresenta un client socket Python che interagisce con un server remoto attraverso una connessione TCP/IP.
+
+1-Importazione del modulo socket.
+2-Input degli indirizzi IP e delle porte del server.
+3-Definizione di una funzione.
+4-Creazione del socket del client e connessione al server.
+5-Stampa del messaggio "Connection established".
+6-Chiamata alla funzione print_menu()
+7-Loop principale.
+8-Input dell'utente per la selezione dell'opzione.
+9-Gestione delle opzioni.

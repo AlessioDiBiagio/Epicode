@@ -1,0 +1,24 @@
+COSA E' UNA BACKDOOR E PERCHE E' PERICOLOSA:
+
+Una backdoor è una vulnerabilità o una porta segreta inserita intenzionalmente o accidentalmente 
+in un sistema informatico, un'applicazione o un dispositivo per consentire l'accesso non autorizzato o 
+il controllo da parte di terze parti. Questa porta segreta può essere utilizzata per bypassare le normali 
+procedure di autenticazione e sicurezza, consentendo a un attaccante di accedere al sistema o all'applicazione 
+in modo nascosto o di controllarli senza essere rilevato.
+
+
+COSA E' E COSA FA IL CODICE 1:
+
+Il codice fornito è un esempio di un server socket Python. 
+Questo server ascolta su una porta specifica in questo caso la porta 1234 e risponde alle richieste inviate dai 
+client che si connettono ad essa.
+
+1-Importazione dei moduli necessari per il funzionamento del server.
+2-Impostazione degli indirizzi e delle porte del server.
+3-Creazione del socket del server. 
+4-Binding e ascolto.
+5-Accettazione della connessione.
+6-Gestione delle richieste del client.
+7-Ricezione dei dati dal client.
+8-Elaborazione delle richieste.
+9-Invio delle risposte al client
