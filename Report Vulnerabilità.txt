@@ -1,0 +1,42 @@
+                                                                                   REPORT:
+
+Tramite il programma Nessus è stata fatta una scansione delle porte comuni e come Target abbiamo usato la macchina di Metasploitable e il suo indirizzo IP.
+Dalla scansione effettuata sono risultate 69 vulnerabilità di cui 13 critiche.
+Analizziamo le prime 4 vulnerabilità critiche:
+
+-1 L'esportazione di condivisioni NFS (Network File System) può comportare vulnerabilità di divulgazione delle informazioni se non è configurata 
+correttamente.NFS è un protocollo di condivisione dei file che consente a un sistema di accedere a file e directory su un altro sistema su una rete.
+
+Soluzione:
+Configurare NFS sull'host remoto in modo che solo gli host autorizzati possano montare le sue condivisioni remote.
+Altre soluzioni potrebbero essere configurare il Firewall del server NFS in modo che accetti solo connessioni da indirizzi IP attendibili cosi da limitare
+l'accesso solo a host autorizzati e monitorare e registrare le attivita degli utenti per rispondere a eventuali attività sospette.
+
+-2 Unix Operating System Unsupported Version Detection:
+Secondo il numero di versione dichiarato, il sistema operativo Unix in esecuzione sull'host remoto non è più supportato.La mancanza di supporto 
+implica che il fornitore non rilascerà nuove patch di sicurezza per il prodotto. Di conseguenza, è probabile che contenga vulnerabilità di sicurezza.
+
+Soluzione:
+Aggiornare a una versione del sistema operativo Unix attualmente supportata.
+Altre soluzioni potrebbero essere implementazione di firewall, la limitazione degli accessi, il monitoraggio delle attività sospette e il mantenimento 
+di un sistema di registrazione dettagliato.
+
+
+-3 La "UnrealIRCd Backdoor Detection" fa riferimento alla scoperta e alla mitigazione di una backdoor che è stata inserita nel software UnrealIRCd, 
+un server IRC (Internet Relay Chat) open source. Una backdoor è una vulnerabilità intenzionalmente introdotta in un software da una parte malintenzionata 
+per consentire l'accesso non autorizzato o il controllo remoto del sistema. Nel caso di UnrealIRCd, una backdoor è stata scoperta in alcune versioni 
+del software.
+
+Soluzione:
+Scaricare nuovamente il software, e reinstallarlo.Nessus nella risoluzione del problema 
+ci consiglia 3 link:
+https://seclists.org/fulldisclosure/2010/Jun/277
+https://seclists.org/fulldisclosure/2010/Jun/284
+http://www.unrealircd.com/txt/unrealsecadvisory.20100612.txt
+
+-4 Il server VNC in esecuzione sull'host remoto è protetto da una password debole. Nessus è stato in grado di effettuare il login utilizzando 
+l'autenticazione VNC e una password di tipo "password". Un attaccante remoto non autenticato potrebbe sfruttare questa situazione per prendere 
+il controllo del sistema.
+
+Soluzione:
+Nessus ci consiglia di proteggere il servizio VNC con una password più forte.
