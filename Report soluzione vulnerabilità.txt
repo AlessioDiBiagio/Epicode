@@ -1,0 +1,8 @@
+                                                                        REPORT:
+
+La prima scansione che ho effettuato con Nessus sono andato a risolvere 2 vulnerabilità critiche.La prima consisteva nel cambiare la password 
+del server VNC, la seconda e la terza sono andato a chiude la backdoor 1524 e 6667.
+Per risolvere la prima criticità sono andato su Metasploitable e ho eseguito il comando "sudo su" per prendere i permessi di root poi ho 
+eseguito il comando "ls -a" per individuare tutte le cartelle nascoste tra cui ".vnc" e all'interno della cartella sono andato a modificare la 
+password.Rifacendo la scansione la vulnerabilità non era più presente.
+Per risolvere la vulnerabilità della backdoor sulla porta 1524 e 6667 sono andato a vedere quale fosse il processo attivo e l'ho chillato.
