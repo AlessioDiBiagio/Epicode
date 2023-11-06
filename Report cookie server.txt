@@ -1,0 +1,10 @@
+                                                                        REPORT:
+
+Con la una query estraggo nome utente e il codice hash delle password.Per convertire i codici hash in password 
+leggibili utilizzo un decodificatore come 'Jhon' su Kali Linux creando un documento.text.
+Come prossimo passo andiamo a definire il cookie ispezionando la pagina.
+Visualizzato il cookie e testato che il sito è vulnerabile andiamo a creare un server locale dove mandare questa informazione.
+Tramite Python avviamo un server web locale dove andiamo ad inviare i cookie rubati.
+Vado ad aumentare la texbox da 50 caratteri a 250 per inserire il comando nell'area di testo altrimenti non potremmo inserirlo per mancanza di spazio quindi,
+ispezionando la pagina andiamo a fare la nostra modifica.
+Infine il cookie di sessione viene inviato al nostro server.
